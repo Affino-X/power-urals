@@ -1,0 +1,66 @@
+@use "header";
+@use "product-hero";
+@use "product-line";
+@use "product-facts";
+@use "ticker";
+@use "product-info";
+@use "order-app";
+@use "certificates";
+@use "footer";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "RF Dewi";
+}
+
+/* Этот селектор применяется ко ВСЕМ элементам, у которых есть атрибут data-animate-on-scroll */
+[data-animate-on-scroll] {
+  /* Скрываем и сдвигаем элементы */
+  opacity: 0;
+  transform: translateY(50px);
+
+  /* Задаем очень плавный переход (как вы и просили) */
+  transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* 2. Стиль активации (Конечное состояние) */
+/* Этот класс добавляет JavaScript, когда элемент становится видимым */
+[data-animate-on-scroll].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 481px) {
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  src: url("/assets/fonts/RFDewiExpanded-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  src: url("/assets/fonts/RFDewiExpanded-Semibold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  src: url("/assets/fonts/RFDewiExpanded-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}

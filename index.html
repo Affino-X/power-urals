@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>HOMEPAGE</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#"><img src="/assets/images/logo.svg" alt="" /></a>
+        </div>
+        <div id="open-sidebar" class="header__menu">MENU</div>
+      </div>
+      <div id="sidebar-menu" class="sidebar-menu">
+        <div class="sidebar-menu__row">
+          <div class="sidebar-menu__head">
+            <h2>MENU</h2>
+            <button
+              id="close-sidebar"
+              class="sidebar-menu__close-btn"
+              aria-label="Закрыть меню"
+            >
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.707031 0.707031L9.20703 9.20703M17.707 17.707L9.20703 9.20703M9.20703 9.20703L17.707 0.707031L0.707031 17.707"
+                  stroke="#004A68"
+                  stroke-opacity="0.63"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul class="sidebar-menu__list">
+            <li><a href="#">Ассортимент</a></li>
+            <li><a href="#">Заказать</a></li>
+            <li><a href="#">О продукции</a></li>
+            <li><a href="#">Лицензия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <button class="sidebar-menu__btn-buy hidden-desktop">Заказать</button>
+        </div>
+        <div class="sidebar-menu__row">
+          <div class="sidebar-menu__footer">
+            <span>&copy; СИЛА УРАЛА 2025</span>
+            <span
+              ><span class="sidebar-menu__text-gray">Сайт разработан</span>
+              GroupNet</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- hero-block -->
+      <section class="hero-block">
+        <div class="product-hero" data-animate-on-scroll>
+          <h1 class="product-hero__title">
+            Питьевая природная вода из артезианской скважины
+          </h1>
+          <p class="product-hero__text">
+            Добываем в экологически-чистом районе Урала
+          </p>
+          <div class="product-hero__buttons">
+            <button class="product-hero__buy">Купить</button>
+            <button class="product-hero__read-more">
+              <span class="hidden-mobile">О продукции</span>
+              <span class="hidden-desktop">Подробнее</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ticker desktop -->
+      <section class="hidden-mobile">
+        <div class="ticker-container">
+          <div class="ticker-wrap">
+            <div class="ticker">
+              <span class="ticker-item">Сила Урала в каждой капле</span>
+              <span class="ticker-item">Создана природой для жизни</span>
+              <span class="ticker-item">Рождена в глубинах Урала</span>
+              <span class="ticker-item">Сила Урала в каждой капле</span>
+              <span class="ticker-item">Создана природой для жизни</span>
+              <span class="ticker-item">Рождена в глубинах Урала</span>
+              <!-- Дублируем для бесшовности -->
+              <span class="ticker-item">Сила Урала в каждой капле</span>
+              <span class="ticker-item">Создана природой для жизни</span>
+              <span class="ticker-item">Рождена в глубинах Уралаа</span>
+              <span class="ticker-item">Сила Урала в каждой капле</span>
+              <span class="ticker-item">Создана природой для жизни</span>
+              <span class="ticker-item">Рождена в глубинах Урала</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product-line -->
+      <section>
+        <div class="product-line">
+          <div class="product-line__text product-line__text--first">СИЛА</div>
+          <div class="product-line__text product-line__text--second">УРАЛА</div>
+          <div class="product-line__bottles hidden-mobile">
+            <div class="product-line__bottle" data-animate-on-scroll>
+              <img src="/assets/images/water-bottle-0.png" alt="" />
+            </div>
+            <div class="product-line__bottle" data-animate-on-scroll>
+              <img src="/assets/images/water-bottle-1.png" alt="" />
+            </div>
+            <div class="product-line__bottle" data-animate-on-scroll>
+              <img src="/assets/images/water-bottle-5.png" alt="" />
+            </div>
+            <div class="product-line__bottle" data-animate-on-scroll>
+              <img src="/assets/images/water-bottle-19.png" alt="" />
+            </div>
+          </div>
+          <div class="product-line__bottles hidden-desktop">
+            <div class="product-line__bottle" data-animate-on-scroll>
+              <img src="/assets/images/water-bottle-mobile-0.png" alt="" />
+            </div>
+            <div class="product-line__bottle" data-animate-on-scroll>
+              <img src="/assets/images/water-bottle-mobile-1.png" alt="" />
+            </div>
+            <div class="product-line__bottle" data-animate-on-scroll>
+              <img src="/assets/images/water-bottle-mobile-5.png" alt="" />
+            </div>
+            <div class="product-line__bottle" data-animate-on-scroll>
+              <img src="/assets/images/water-bottle-mobile-19.png" alt="" />
+            </div>
+          </div>
+          <img
+            class="product-line__haze"
+            src="/assets/images/bg-haze.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- ticker mobile -->
+      <section class="hidden-desktop">
+        <div class="ticker-container">
+          <div class="ticker-wrap">
+            <div class="ticker">
+              <span class="ticker-item">Сила Урала в каждой капле</span>
+              <span class="ticker-item">Создана природой для жизни</span>
+              <span class="ticker-item">Рождена в глубинах Урала</span>
+              <span class="ticker-item">Сила Урала в каждой капле</span>
+              <span class="ticker-item">Создана природой для жизни</span>
+              <span class="ticker-item">Рождена в глубинах Урала</span>
+              <!-- Дублируем для бесшовности -->
+              <span class="ticker-item">Сила Урала в каждой капле</span>
+              <span class="ticker-item">Создана природой для жизни</span>
+              <span class="ticker-item">Рождена в глубинах Уралаа</span>
+              <span class="ticker-item">Сила Урала в каждой капле</span>
+              <span class="ticker-item">Создана природой для жизни</span>
+              <span class="ticker-item">Рождена в глубинах Урала</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product-facts -->
+      <section>
+        <div class="product-facts" data-animate-on-scroll>
+          <!-- Фасовка -->
+          <!-- Можешь попробовать стилизовать -->
+          <!-- Посмотри файл /assets/scss/_product-facts.scss -->
+          <div class="product-facts__row">
+            <div class="product-facts__column">
+              <h2 class="product-facts__title">Фасовка:</h2>
+              <ul class="product-facts__list">
+                <li class="product-facts__item">
+                  <span class="product-facts__volume"
+                    >0,5 <strong>л</strong></span
+                  >
+                  <span class="item__line"></span>
+                  <span class="product-facts__text"
+                    >удобно брать с собой на прогулку или в спортзал</span
+                  >
+                </li>
+                <li class="product-facts__item">
+                  <span class="product-facts__volume"
+                    >1,5 <strong>л</strong></span
+                  >
+                  <span class="item__line"></span>
+                  <span class="product-facts__text"
+                    >оптимальный формат для дома и офиса</span
+                  >
+                </li>
+                <li class="product-facts__item">
+                  <span class="product-facts__volume"
+                    >5 <strong>л</strong></span
+                  >
+                  <span class="item__line"></span>
+                  <span class="product-facts__text"
+                    >для семьи и приготовления пищи</span
+                  >
+                </li>
+                <li class="product-facts__item">
+                  <span class="product-facts__volume"
+                    >19 <strong>л</strong></span
+                  >
+                  <span class="item__line"></span>
+                  <span class="product-facts__text"
+                    >для семьи и приготовления пищи</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <button class="product-facts__button">Заказать</button>
+          </div>
+          <!-- Шаги -->
+          <!-- да -->
+        </div>
+      </section>
+      <!-- product-info STEPS -->
+      <section>
+        <div class="product-info hidden-mobile">
+          <!-- STEP 1 -->
+
+          <div
+            class="product-info__step product-info__step--1"
+            data-animate-on-scroll
+          >
+            <div class="product-info__number">1</div>
+            <h3 class="product-info__subtitle">
+              Месторождение воды <strong>Сила Урала</strong>
+            </h3>
+            <div class="product-info__content">
+              <p>
+                Вода «Сила Урала» добывается из артезианской скважины,
+                расположенной <strong>в сердце Уральских гор</strong> — в
+                экологически чистом районе, вдали от промышленных зон и
+                мегаполисов.
+              </p>
+              <p>
+                Этот регион славится своей первозданной природой, чистым
+                воздухом и уникальным минеральным составом подземных источников.
+              </p>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+
+          <div
+            class="product-info__step product-info__step--2"
+            data-animate-on-scroll
+          >
+            <div class="product-info__decorations">
+              <div>
+                <div class="product-info__number">2</div>
+              </div>
+              <div class="product-info__bg-white"></div>
+            </div>
+            <h3 class="product-info__subtitle">
+              Глубина скважины <strong>180 метров</strong>
+            </h3>
+            <div class="product-info__content">
+              <p>
+                Добыча ведётся с глубины 180 метров, где вода веками фильтруется
+                через природные пласты гранита и известняка, приобретая
+                сбалансированный минеральный состав и естественную мягкость.
+              </p>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+
+          <div
+            class="product-info__step product-info__step--3"
+            data-animate-on-scroll
+          >
+            <div class="product-info__decorations">
+              <div>
+                <div class="product-info__number">3</div>
+              </div>
+              <div class="product-info__bg-white"></div>
+            </div>
+            <h3 class="product-info__subtitle">
+              Состав воды <br />
+              <strong>Сила Урала</strong>
+            </h3>
+            <div class="product-info__content">
+              <ul class="product-info__list">
+                <li>Минерализация: 0,25-0,35 г/л</li>
+                <li>Кальций (Ca²⁺): 2535мг/л</li>
+                <li>Магний (Mg²⁺): 10–15 мг/л</li>
+                <li>Калий (K⁺): до 2 мг/л</li>
+                <li>Натрий (Na⁺): до 10 мг/л</li>
+                <li>Гидрокарбонаты (HCO₃⁻): 180–240 мг/л</li>
+                <li>pH: 7,2-7,6</li>
+              </ul>
+            </div>
+          </div>
+          <!-- STEP 4 -->
+
+          <div
+            class="product-info__step product-info__step--4"
+            data-animate-on-scroll
+          >
+            <div class="product-info__decorations">
+              <div>
+                <div class="product-info__number">4</div>
+              </div>
+              <div class="product-info__bg-white"></div>
+            </div>
+
+            <h3 class="product-info__subtitle">Технология очистки</h3>
+            <div class="product-info__content">
+              <p>Вода проходит щадящую многоступенчатую систему фильтрации.</p>
+              <p>
+                Все этапы направлены на сохранение природного баланса минералов
+                и микроэлементов, таких как кальций, магний и калий,
+                обеспечивающих пользу и мягкий вкус воды.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="product-info hidden-desktop">
+          <div class="slider-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-info__step product-info__step--1">
+                    <div class="product-info__number">1</div>
+                    <h3 class="product-info__subtitle">
+                      Месторождение <br />воды <strong>Сила Урала</strong>
+                    </h3>
+                    <div class="product-info__content">
+                      <p>
+                        Вода «Сила Урала» добывается из артезианской скважины,
+                        расположенной <strong>в сердце Уральских гор</strong> —
+                        в экологически чистом районе, вдали от промышленных зон
+                        и мегаполисов.
+                      </p>
+                      <p>
+                        Этот регион славится своей первозданной природой, чистым
+                        воздухом и уникальным минеральным составом подземных
+                        источников.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-info__step product-info__step--2">
+                    <div class="product-info__decorations">
+                      <div>
+                        <div
+                          class="product-info__number"
+                          data-animate-on-scroll
+                        >
+                          2
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="product-info__subtitle">
+                      Глубина скважины <br /><strong>180 метров</strong>
+                    </h3>
+                    <div class="product-info__content">
+                      <p>
+                        Добыча ведётся с глубины 180 метров, где вода веками
+                        фильтруется через природные пласты гранита и известняка,
+                        приобретая сбалансированный минеральный состав и
+                        естественную мягкость.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-info__step product-info__step--3">
+                    <div class="product-info__decorations">
+                      <div>
+                        <div class="product-info__number">3</div>
+                      </div>
+                    </div>
+                    <h3 class="product-info__subtitle">
+                      Состав воды <br />
+                      <strong>Сила Урала</strong>
+                    </h3>
+                    <div class="product-info__content">
+                      <ul class="product-info__list">
+                        <li>Минерализация: 0,25-0,35 г/л</li>
+                        <li>Кальций (Ca²⁺): 2535мг/л</li>
+                        <li>Магний (Mg²⁺): 10–15 мг/л</li>
+                        <li>Калий (K⁺): до 2 мг/л</li>
+                        <li>Натрий (Na⁺): до 10 мг/л</li>
+                        <li>Гидрокарбонаты (HCO₃⁻): 180–240 мг/л</li>
+                        <li>pH: 7,2-7,6</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-info__step product-info__step--4">
+                    <div class="product-info__decorations">
+                      <div>
+                        <div class="product-info__number">4</div>
+                      </div>
+                    </div>
+
+                    <h3 class="product-info__subtitle">Технология очистки</h3>
+                    <div class="product-info__content">
+                      <p>
+                        Вода проходит щадящую многоступенчатую систему
+                        фильтрации.
+                      </p>
+                      <p>
+                        Все этапы направлены на сохранение природного баланса
+                        минералов и микроэлементов, таких как кальций, магний и
+                        калий, обеспечивающих пользу и мягкий вкус воды.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- order-form-section -->
+      <section>
+        <div class="order-app">
+          <div class="order-app__row">
+            <div data-animate-on-scroll>
+              <h2 class="order-app__title">Оформите заявку</h2>
+              <p class="order-app__text">
+                Наш менеджер свяжется с вами в течение 15 минут
+              </p>
+            </div>
+            <form class="form-app" data-animate-on-scroll>
+              <div class="form-app__inputs">
+                <input
+                  class="form-app__name"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше Имя"
+                />
+                <input
+                  class="form-app__address"
+                  type="text"
+                  name="address"
+                  placeholder="Адрес"
+                />
+                <input
+                  class="form-app__phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Номер телефона"
+                />
+                <input
+                  class="form-app__email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+                <textarea
+                  class="form-app__message"
+                  name="message"
+                  id="message"
+                  placeholder="Комментарий к заказу"
+                ></textarea>
+              </div>
+              <div class="form-app__send">
+                <button type="submit">Отправить</button>
+                <label>
+                  <div id="agreement-checkbox" class="">
+                    <input type="checkbox" required name="agreement" />
+                    <div class="custom-checkbox-square"></div>
+                  </div>
+
+                  <span class="checkbox-text">
+                    Даю согласие на обработку персональных данных и принимаю
+                    условия пользовательского соглашения
+                  </span>
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="order-app__row order-app__row--2" data-animate-on-scroll>
+            <h2>
+              Вода <br />
+              <strong>Сила Урала</strong>
+            </h2>
+            <p>
+              это часть великой природной системы, где вода веками очищается,
+              проходя через многослойные пласты горных пород, насыщаясь
+              микроэлементами и сохраняя природную свежесть.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- certificates-section -->
+      <section>
+        <div class="certificates">
+          <div class="certificates__row hidden-mobile" data-animate-on-scroll>
+            <div class="certificates__column">
+              <h2 class="certificates__title">
+                Сертификаты соответствия и лицензия
+              </h2>
+              <p class="certificates__text">
+                Качество и безопасность воды
+                <strong>«Сила Урала»</strong> подтверждены официальными
+                документами и соответствуют требованиям российского и
+                международного законодательства.
+              </p>
+            </div>
+            <div class="certificates__column">
+              <img
+                class="certificates__img-sign"
+                src="/assets/images/honest-sign.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="certificates__row hidden-desktop" data-animate-on-scroll>
+            <div class="certificates__column">
+              <h2 class="certificates__title">
+                Сертификаты соответствия и лицензия
+              </h2>
+              <img
+                class="certificates__img-sign"
+                src="/assets/images/honest-sign.png"
+                alt=""
+              />
+            </div>
+            <div class="certificates__column">
+              <p class="certificates__text">
+                Качество и безопасность воды
+                <strong>«Сила Урала»</strong> подтверждены официальными
+                документами и соответствуют требованиям российского и
+                международного законодательства.
+              </p>
+            </div>
+          </div>
+          <div class="certificates__row">
+            <ul class="certificates__list hidden-mobile">
+              <li class="certificates__item">
+                <div class="certificates__img-doc">
+                  <img src="/assets/images/document-1.png" alt="" />
+                </div>
+                <span
+                  >Протокол от <br />
+                  11.09.2024 г.</span
+                >
+              </li>
+              <li class="certificates__item">
+                <div class="certificates__img-doc">
+                  <img src="/assets/images/document-4.png" alt="" />
+                </div>
+                <span>Анализ готовой <br />продукции</span>
+              </li>
+              <li class="certificates__item">
+                <div class="certificates__img-doc">
+                  <img src="/assets/images/document-3.png" alt="" />
+                </div>
+                <span
+                  >Лицензия на <br />
+                  пользование недрами</span
+                >
+              </li>
+              <li class="certificates__item">
+                <div class="certificates__img-doc">
+                  <img src="/assets/images/document-2.png" alt="" />
+                </div>
+                <span
+                  >Декларация <br />
+                  ЕАЭС</span
+                >
+              </li>
+            </ul>
+            <div class="hidden-desktop">
+              <div class="slider-container">
+                <div id="slider" class="slider">
+                  <div class="slide">
+                    <div class="slide-image">
+                      <img src="/assets/images/document-1.png" alt="" />
+                    </div>
+
+                    <p>Протокол от 11.09.2024 г.</p>
+                  </div>
+                  <div class="slide">
+                    <div class="slide-image">
+                      <img src="/assets/images/document-4.png" alt="" />
+                    </div>
+                    <p>Анализ готовой продукции</p>
+                  </div>
+                  <div class="slide">
+                    <div class="slide-image">
+                      <img src="/assets/images/document-3.png" alt="" />
+                    </div>
+                    <p>
+                      Лицензия на <br />
+                      пользование недрами
+                    </p>
+                  </div>
+                  <div class="slide">
+                    <div class="slide-image">
+                      <img src="/assets/images/document-2.png" alt="" />
+                    </div>
+                    <p>
+                      Декларация <br />
+                      ЕАЭС
+                    </p>
+                  </div>
+                </div>
+                <div class="progress-bar-container">
+                  <div id="progress-bar" class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <!-- Верхний -->
+        <div class="footer__row">
+          <div class="footer__logo">
+            <img src="/assets/images/footer_logo.svg" alt="Логотип" />
+          </div>
+          <button class="footer__button">Заказать</button>
+          <a class="footer__line-tel hidden-desktop" href="tel:+79956630002"
+            >+7 (995) 663-00-02</a
+          >
+        </div>
+        <!-- Середина -->
+        <div class="footer__row">
+          <!-- 1 столбец -->
+          <div class="footer__column">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">Ассортимент</li>
+                <li class="menu__item">О продукции</li>
+                <li class="menu__item">Лицензия</li>
+                <li class="menu__item">Контакты</li>
+              </ul>
+            </nav>
+
+            <ul class="footer__water">
+              <li>Вода 0.5л</li>
+              <li>Вода 1.5л</li>
+              <li>Вода 5л</li>
+              <li>Вода 19л</li>
+            </ul>
+          </div>
+          <!-- 2 столбец -->
+          <div class="footer__column">
+            <div class="footer__line">
+              <a class="footer__line-tel hidden-mobile" href="tel:+79956630002"
+                >+7 (995) 663-00-02</a
+              >
+              <a class="footer__line-mail" href="mail:info@silayrala.pro"
+                >Email: info@silayrala.pro</a
+              >
+              <span class="footer__line-address">
+                Россия, Свердловская область, Сысертский городской округ,
+                пос.Первомайский, территория «Росинка», земельный участок № 1
+              </span>
+              <div class="footer__socials">
+                <a href="#"
+                  ><img src="assets/images/whatsapp.svg" alt="whatsApp"
+                /></a>
+                <a href="#"
+                  ><img src="assets/images/telegram.svg" alt="telegram"
+                /></a>
+              </div>
+            </div>
+
+            <div class="footer__privacy">
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__row-responsive">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">Ассортимент</li>
+
+              <li class="menu__item">Лицензия</li>
+              <li class="menu__item">О продукции</li>
+              <li class="menu__item">Контакты</li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Нижний -->
+        <div class="footer__row">
+          <div class="footer__copyright">
+            <span>&copy; СИЛА УРАЛА 2025</span>
+            <span
+              ><span class="footer__text-gray">Сайт разработан</span>
+              GroupNet</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

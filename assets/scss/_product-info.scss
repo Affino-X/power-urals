@@ -1,0 +1,281 @@
+.product-info {
+  // .product-info__step
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  padding: 60px 60px;
+  padding-bottom: 250px;
+  box-sizing: border-box;
+  background: url("/assets/images/Фон.png");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1526px;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 15px;
+    min-height: 350px;
+  }
+  &__step {
+    max-width: 530px;
+    position: relative;
+    max-height: 550px;
+    z-index: 2;
+    &--1 {
+      padding-left: 150px;
+      .product-info__number {
+        top: -70px;
+        left: 25px;
+      }
+
+      @media (max-width: 1200px) {
+        padding: 0;
+        .product-info__number {
+          top: -84px;
+          left: -120px;
+        }
+      }
+      @media (max-width: 992px) {
+        .product-info__number {
+          top: -64px;
+          left: -90px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .product-info__number {
+          top: -64px;
+          left: -20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .product-info__number {
+          top: -130px;
+          left: 0px;
+        }
+      }
+    }
+    &--2 {
+      grid-row: 2;
+      grid-column: 2;
+      .product-info__number {
+        top: -105px;
+        left: -165px;
+      }
+      @media (max-width: 992px) {
+        .product-info__number {
+          top: -64px;
+          left: -90px;
+        }
+      }
+      @media (max-width: 767px) {
+        .product-info__number {
+          top: -64px;
+          left: -20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .product-info__number {
+          top: -130px;
+          left: 0px;
+        }
+      }
+    }
+    &--3 {
+      grid-row: 4;
+      grid-column: 1;
+      padding-left: 150px;
+      .product-info__number {
+        top: -10px;
+        left: -130px;
+      }
+      @media (max-width: 1200px) {
+        padding: 0;
+      }
+      @media (max-width: 992px) {
+        .product-info__number {
+          top: -64px;
+          left: -90px;
+        }
+      }
+      @media (max-width: 767px) {
+        .product-info__number {
+          top: -64px;
+          left: -20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .product-info__number {
+          top: -130px;
+          left: 0px;
+        }
+      }
+    }
+    &--4 {
+      grid-row: 6;
+      grid-column: 2;
+
+      .product-info__number {
+        top: -110px;
+        left: -170px;
+      }
+      @media (max-width: 992px) {
+        .product-info__number {
+          top: -64px;
+          left: -90px;
+        }
+      }
+      @media (max-width: 767px) {
+        .product-info__number {
+          top: -64px;
+          left: -20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .product-info__number {
+          top: -130px;
+          left: 0px;
+        }
+      }
+    }
+  }
+
+  &__number {
+    position: absolute;
+    font-size: 400px;
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke: 5px rgba(2, 67, 121, 0.06);
+    @media (max-width: 992px) {
+      font-size: 350px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 280px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 250px;
+    }
+  }
+
+  // .product-info__subtitle
+
+  &__subtitle {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: RF Dewi;
+    color: #0a4455;
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
+
+  // .product-info__content
+
+  &__content {
+    color: #0a4455;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Montserrat;
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+
+  // .product-info__list
+
+  &__list {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 34px;
+    letter-spacing: 0%;
+    padding: 0;
+    list-style: none;
+    color: rgba(10, 68, 85, 1);
+    @media (max-width: 480px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    li::before {
+      content: "•"; /* свой кружок */
+      color: rgba(10, 68, 85, 1);
+      font-size: 24px; /* размер круга */
+      margin-right: 10px; /* отступ */
+    }
+  }
+
+  &__decorations {
+    position: relative;
+  }
+
+  &__bg-white {
+    position: absolute;
+    top: -250px;
+    left: -250px;
+    filter: blur(80px);
+    background: rgb(255, 255, 255);
+    width: 750px;
+    border-radius: 50%;
+    height: 750px;
+    z-index: -1;
+
+    @media (max-width: 1200px) {
+      top: 0;
+      height: 500px;
+    }
+  }
+}
+
+/* Задаем размеры контейнера */
+.slider-container {
+  width: 100%; /* Вы можете изменить на 100% или другое значение */
+  margin: 80px auto;
+  position: relative;
+  padding-bottom: 30px; /* Место для прогресс-бара */
+}
+
+/* Стили для слайдов (почти как у вас) */
+.swiper-slide {
+  box-sizing: border-box;
+  padding: 20px 0;
+  padding-top: 60px;
+  font-size: 14px;
+  color: #333;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
+
+/* 2. Стилизация прогресс-бара Swiper */
+.swiper-pagination-progressbar {
+  bottom: 0 !important; /* Размещаем внизу контейнера */
+  top: auto !important; /* Сбрасываем верхнее положение */
+  height: 8px !important;
+  border-radius: 100px;
+  background: rgba(2, 67, 121, 0.33);
+}
+
+/* Цвет "заполнения" прогресс-бара */
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: rgba(2, 67, 121, 0.72);
+  border-radius: 100px;
+}

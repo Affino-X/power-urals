@@ -1,0 +1,50 @@
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+  height: 54px;
+  box-sizing: border-box;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.15);
+  @media (max-width: 480px) {
+    height: 37px;
+    padding: 10px 0;
+    box-shadow: none;
+    background: rgba(239, 239, 239, 0.33);
+  }
+}
+
+.ticker-wrap {
+  display: flex;
+  width: 100%;
+}
+
+.ticker {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+
+.ticker-item {
+  padding: 0 50px;
+  font-size: 20px;
+  color: rgba(1, 71, 82, 0.48);
+  display: inline-block;
+  @media (max-width: 480px) {
+    font-size: 12px;
+    padding: 0 45px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Пауза при; наведении */
+.ticker-container:hover .ticker {
+  animation-play-state: paused;
+}

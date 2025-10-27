@@ -1,0 +1,358 @@
+.order-app {
+  // .order-app__row
+  background-image: url("/assets/images/bg-order-app.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1611px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 255px;
+
+  @media (max-width: 1400px) {
+    min-height: 1511px;
+    gap: 80px;
+    padding: 40px;
+  }
+
+  @media (max-width: 992px) {
+    background-position: -190px 80px;
+    min-height: 1611px;
+    padding: 30px;
+  }
+
+  @media (max-width: 767px) {
+    background-image: url("/assets/images/bg-order-app-mobile.png");
+
+    background-size: cover;
+    background-position: top;
+    min-height: 1711px;
+    padding: 24px;
+  }
+
+  @media (max-width: 480px) {
+    background-image: url("/assets/images/bg-order-app-mobile.png");
+    min-height: 1250px;
+    padding: 20px 48px 20px 15px;
+  }
+
+  &__row {
+    &:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      gap: 190px;
+      min-height: 530px;
+
+      @media (max-width: 480px) {
+        gap: 150px;
+      }
+    }
+
+    &--2 {
+      @media (max-width: 767px) {
+        display: none;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 40px;
+        max-width: 350px;
+        color: rgba(0, 65, 101, 1);
+        margin: 0;
+        margin-bottom: 16px;
+      }
+      p {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 1.2;
+        letter-spacing: 0%;
+        max-width: 550px;
+        border-left: 1px solid rgba(0, 65, 101, 1);
+        padding-left: 12px;
+        margin: 0;
+      }
+    }
+  }
+
+  // .order-app__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    background: linear-gradient(
+      90deg,
+      #003344 0%,
+      #0080aa 41.92%,
+      #003344 99.04%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    margin-bottom: 10px;
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
+
+  // .order-app__text
+
+  &__text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    @media (max-width: 480px) {
+      font-size: 14px;
+      max-width: 208px;
+    }
+  }
+}
+.form-app {
+  // .form-app__inputs
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  &__inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 790px;
+    width: 100%;
+    row-gap: 50px;
+    column-gap: 140px;
+    @media (max-width: 480px) {
+      row-gap: 30px;
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    input {
+      max-width: 321px;
+
+      background: transparent;
+      border: none;
+      color: rgba(0, 51, 68, 1);
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;
+      padding-left: 14px;
+      outline: none;
+
+      height: 28px;
+      border-bottom: 0.5px solid rgba(0, 65, 101, 0.65);
+      @media (max-width: 767px) {
+        max-width: 100%;
+      }
+      &::placeholder {
+        color: rgba(0, 51, 68, 1);
+      }
+    }
+  }
+
+  // .form-app__name
+
+  &__name {
+  }
+
+  // .form-app__address
+
+  &__address {
+  }
+
+  // .form-app__phone
+
+  &__phone {
+  }
+
+  // .form-app__email
+
+  &__email {
+  }
+
+  // .form-app__message
+
+  &__message {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    background: #fff;
+    border: none;
+
+    height: 95px;
+    padding: 18px 0 0 16px;
+    resize: none;
+    outline: none;
+    color: rgba(10, 68, 85, 1);
+    grid-column: 2 span;
+    @media (max-width: 767px) {
+      grid-column: 1;
+    }
+    @media (max-width: 480px) {
+      height: 150px;
+    }
+    &::placeholder {
+      color: rgba(10, 68, 85, 1);
+    }
+  }
+
+  // .form-app__send
+
+  &__send {
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    gap: 7px;
+    @media (max-width: 767px) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: 480px) {
+      gap: 20px;
+      padding-left: 20px;
+    }
+    button {
+      background: linear-gradient(
+        90deg,
+        #004165 0%,
+        #006c98 47.12%,
+        #004165 100%
+      );
+      color: #fff;
+      font-family: "RF Dewi";
+      font-weight: 700;
+      font-size: 20px;
+      width: 400px;
+      height: 70px;
+      border: none;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        height: 60px;
+      }
+    }
+
+    label {
+      display: flex;
+      gap: 14px;
+    }
+
+    .checkbox-text {
+      display: block;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 12px;
+      leading-trim: NONE;
+      line-height: 20px;
+      letter-spacing: 0px;
+      vertical-align: middle;
+      color: rgba(1, 75, 106, 1);
+    }
+
+    #agreement-checkbox {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #00796b;
+      background-color: transparent;
+      cursor: pointer;
+      margin: 0;
+      flex-shrink: 0;
+      position: relative;
+      top: 5px;
+    }
+
+    #agreement-checkbox input {
+      /* Сбрасываем стандартный внешний вид для всех браузеров */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    #agreement-checkbox input:checked + .custom-checkbox-square {
+      position: absolute;
+      top: -2px;
+      left: -5px;
+      width: 40px;
+      height: 100%;
+      background-image: url("/assets/images/сheckbox-checked.svg");
+      background-repeat: no-repeat;
+      background-position: 10px 0;
+    }
+  }
+}
+
+.slider-container {
+  width: 100%; /* Ширина контейнера для отображения двух элементов */
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30px; /* Место для прогресс-бара */
+}
+
+.slider {
+  display: flex;
+
+  transition: transform 0.5s ease-in-out; /* Анимация переключения слайдов */
+}
+
+.slide {
+  min-width: 50%; /* Чтобы поместилось 2 элемента */
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.slide-image {
+  min-height: 300px;
+  display: flex;
+  justify-content: end;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc; /* Просто для визуального разделения */
+}
+
+/* Прогресс-бар */
+.progress-bar-container {
+  width: 95%;
+  border-radius: 100px;
+  height: 8px;
+  margin: 0 auto;
+  background: rgba(2, 67, 121, 0.33);
+  box-sizing: border-box;
+}
+
+.progress-bar {
+  height: 100%;
+  background: rgba(2, 67, 121, 0.72); /* Цвет заполнения */
+  width: 0;
+  border-radius: 100px;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* Ключевые кадры для анимации заполнения */
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
