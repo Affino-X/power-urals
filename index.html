@@ -49,11 +49,11 @@
             </button>
           </div>
           <ul class="sidebar-menu__list">
-            <li><a href="#">Ассортимент</a></li>
-            <li><a href="#">Заказать</a></li>
-            <li><a href="#">О продукции</a></li>
-            <li><a href="#">Лицензия</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#assortment">Ассортимент</a></li>
+            <li><a href="#order">Заказать</a></li>
+            <li><a href="#production">О продукции</a></li>
+            <li><a href="#certificates">Лицензия</a></li>
+            <li><a href="#contact">Контакты</a></li>
           </ul>
           <button class="sidebar-menu__btn-buy hidden-desktop">Заказать</button>
         </div>
@@ -110,7 +110,7 @@
         </div>
       </section>
       <!-- product-line -->
-      <section>
+      <section id="assortment">
         <div class="product-line">
           <div class="product-line__text product-line__text--first">СИЛА</div>
           <div class="product-line__text product-line__text--second">УРАЛА</div>
@@ -172,11 +172,8 @@
         </div>
       </section>
       <!-- product-facts -->
-      <section>
+      <section id="production">
         <div class="product-facts" data-animate-on-scroll>
-          <!-- Фасовка -->
-          <!-- Можешь попробовать стилизовать -->
-          <!-- Посмотри файл /assets/scss/_product-facts.scss -->
           <div class="product-facts__row">
             <div class="product-facts__column">
               <h2 class="product-facts__title">Фасовка:</h2>
@@ -222,7 +219,6 @@
             <button class="product-facts__button">Заказать</button>
           </div>
           <!-- Шаги -->
-          <!-- да -->
         </div>
       </section>
       <!-- product-info STEPS -->
@@ -433,7 +429,7 @@
       </section>
 
       <!-- order-form-section -->
-      <section>
+      <section id="order">
         <div class="order-app">
           <div class="order-app__row">
             <div data-animate-on-scroll>
@@ -505,7 +501,7 @@
         </div>
       </section>
       <!-- certificates-section -->
-      <section>
+      <section id="certificates">
         <div class="certificates">
           <div class="certificates__row hidden-mobile" data-animate-on-scroll>
             <div class="certificates__column">
@@ -628,7 +624,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="footer__wrapper">
         <!-- Верхний -->
         <div class="footer__row">

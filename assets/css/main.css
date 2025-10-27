@@ -306,9 +306,8 @@
 }
 @media (max-width: 480px) {
   .product-hero__buttons {
-    max-width: 420px;
     width: 100%;
-    padding: 0 40px;
+    gap: 5px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -333,7 +332,7 @@
 @media (max-width: 480px) {
   .product-hero__buy {
     width: 100%;
-    font-size: max(14px, 4.5vw);
+    font-size: 14px;
   }
 }
 .product-hero__read-more {
@@ -355,7 +354,7 @@
 @media (max-width: 480px) {
   .product-hero__read-more {
     width: 100%;
-    font-size: max(14px, 4.5vw);
+    font-size: 14px;
   }
 }
 
