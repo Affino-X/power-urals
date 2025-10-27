@@ -805,6 +805,7 @@
   -webkit-animation: scroll 20s linear infinite;
           animation: scroll 20s linear infinite;
   white-space: nowrap;
+  will-change: transform;
 }
 
 .ticker-item {

@@ -2,23 +2,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const slider = document.getElementById("slider");
   const progressBar = document.getElementById("progress-bar");
   const slides = document.querySelectorAll(".slide:not(.clone)");
-  const totalSlides = slides.length; // 4 элемента
-  const slidesToShow = 2; // Сколько элементов видно
-  const slideDuration = 3000; // 3 секунды на один "круг" (переход к следующей паре)
-  const transitionDuration = 500; // 0.5 секунды на переключение
+  const totalSlides = slides.length; 
+  const slidesToShow = 2; 
+  const slideDuration = 3000; 
+  const transitionDuration = 500; 
   let currentSlide = 0;
   let autoSlideInterval;
 
-  // 1. Установим начальную позицию (показываем первые 2)
-  // Это не нужно, так как по умолчанию мы показываем первые элементы
+
 
   // 2. Функция для запуска анимации прогресс-бара
   function startProgressBarAnimation() {
-    // Сброс анимации
+ 
     progressBar.style.animation = "none";
-    // Принудительный рефлоу для перезапуска
+
     void progressBar.offsetWidth;
-    // Запуск новой анимации
+
     progressBar.style.animation = `fillProgress ${
       slideDuration / 1000
     }s linear forwards`;
@@ -30,12 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const offset = currentSlide * (200 / (totalSlides / slidesToShow));
     slider.style.transform = `translateX(-${offset}%)`;
 
-    // Перезапуск прогресс-бара
+
     startProgressBarAnimation();
 
-    // Проверка для создания эффекта бесконечного цикла
+
     if (currentSlide >= totalSlides / slidesToShow) {
-      // После завершения анимации перехода, мгновенно перемещаемся к началу
+    
       setTimeout(() => {
         slider.style.transition = "none";
         currentSlide = 0;
@@ -62,27 +61,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const swiper = new Swiper(".swiper", {
   // --- Основные параметры ---
-  direction: "horizontal", // Направление
-  slidesPerView: 1, // Показывать по одному слайду
-  spaceBetween: 20, // Отступ между слайдами
+  direction: "horizontal", 
+  slidesPerView: 1, 
+  spaceBetween: 20, 
 
-  // --- Бесконечная прокрутка ---
+
   loop: true,
 
-  // --- Автопрокрутка ---
+
   autoplay: {
-    delay: 3000, // 3 секунды, как у вас было
-    disableOnInteraction: false, // Не отключать после ручного переключения
+    delay: 3000, 
+    disableOnInteraction: false, 
   },
 
   // --- Прогресс-бар ---
   pagination: {
-    el: ".swiper-pagination", // Элемент, который мы добавили в HTML
-    type: "progressbar", // Тип - прогресс-бар
+    el: ".swiper-pagination", 
+    type: "progressbar", 
   },
 
   // --- Скорость анимации ---
-  speed: 500, // 0.5 секунды, как у вас было
+  speed: 500, 
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -101,20 +100,20 @@ document.addEventListener("DOMContentLoaded", () => {
 const generalObserver = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
-      // Проверяем, вошел ли элемент в область видимости
+   
       if (entry.isIntersecting) {
-        // 🔥 Добавляем универсальный класс, который запустит CSS-анимацию
+      
         entry.target.classList.add("is-visible");
 
-        // Прекращаем наблюдение за этим конкретным элементом
+      
         observer.unobserve(entry.target);
       }
     });
   },
   {
-    // Настройки видимости (можно сделать их общими или задавать через data-атрибут)
+ 
     rootMargin: "0px",
-    threshold: 0.2, // Срабатывает, когда видно 20% элемента
+    threshold: 0.2, 
   }
 );
 
