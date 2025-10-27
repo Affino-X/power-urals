@@ -333,6 +333,7 @@
   .product-hero__buy {
     width: 100%;
     font-size: 14px;
+    font-weight: 700;
   }
 }
 .product-hero__read-more {
@@ -354,6 +355,7 @@
 @media (max-width: 480px) {
   .product-hero__read-more {
     width: 100%;
+    font-weight: 700;
     font-size: 14px;
   }
 }
