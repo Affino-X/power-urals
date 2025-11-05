@@ -1115,13 +1115,22 @@
   position: absolute;
   top: -250px;
   left: -250px;
+  filter: blur(80px);
   -webkit-filter: blur(80px);
-          filter: blur(80px);
   background: rgb(255, 255, 255);
   width: 750px;
   border-radius: 50%;
   height: 750px;
   z-index: -1;
+}
+@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .product-info__bg-white .your-element {
+      /* Фолбэк или другой размер размытия */
+      -webkit-filter: blur(40px);
+      filter: blur(40px);
+    }
+  }
 }
 @media (max-width: 1200px) {
   .product-info__bg-white {
