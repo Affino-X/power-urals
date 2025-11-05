@@ -2,18 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const slider = document.getElementById("slider");
   const progressBar = document.getElementById("progress-bar");
   const slides = document.querySelectorAll(".slide:not(.clone)");
-  const totalSlides = slides.length; 
-  const slidesToShow = 2; 
-  const slideDuration = 3000; 
-  const transitionDuration = 500; 
+  const totalSlides = slides.length;
+  const slidesToShow = 2;
+  const slideDuration = 3000;
+  const transitionDuration = 500;
   let currentSlide = 0;
   let autoSlideInterval;
 
-
-
   // 2. Функция для запуска анимации прогресс-бара
   function startProgressBarAnimation() {
- 
     progressBar.style.animation = "none";
 
     void progressBar.offsetWidth;
@@ -29,12 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const offset = currentSlide * (200 / (totalSlides / slidesToShow));
     slider.style.transform = `translateX(-${offset}%)`;
 
-
     startProgressBarAnimation();
 
-
     if (currentSlide >= totalSlides / slidesToShow) {
-    
       setTimeout(() => {
         slider.style.transition = "none";
         currentSlide = 0;
@@ -61,27 +55,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const swiper = new Swiper(".swiper", {
   // --- Основные параметры ---
-  direction: "horizontal", 
-  slidesPerView: 1, 
-  spaceBetween: 20, 
-
+  direction: "horizontal",
+  slidesPerView: 1,
+  spaceBetween: 20,
 
   loop: true,
 
-
   autoplay: {
-    delay: 3000, 
-    disableOnInteraction: false, 
+    delay: 3000,
+    disableOnInteraction: false,
   },
 
   // --- Прогресс-бар ---
   pagination: {
-    el: ".swiper-pagination", 
-    type: "progressbar", 
+    el: ".swiper-pagination",
+    type: "progressbar",
   },
 
   // --- Скорость анимации ---
-  speed: 500, 
+  speed: 500,
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -94,26 +86,28 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener("click", () => {
     sideBarMenu.classList.remove("active");
   });
+
+  sideBarMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      sideBarMenu.classList.remove("active");
+    });
+  });
 });
 
 // 1. Создаем общий Observer
 const generalObserver = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
-   
       if (entry.isIntersecting) {
-      
         entry.target.classList.add("is-visible");
 
-      
         observer.unobserve(entry.target);
       }
     });
   },
   {
- 
     rootMargin: "0px",
-    threshold: 0.2, 
+    threshold: 0.2,
   }
 );
 

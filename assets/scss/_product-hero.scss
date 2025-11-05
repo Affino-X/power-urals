@@ -84,6 +84,9 @@
   // .product-hero__buy
 
   &__buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #ffffffdb;
     border: none;
     color: #ffffff;
@@ -94,6 +97,7 @@
     height: 100%;
     cursor: pointer;
     background: #497d92;
+    text-decoration: none;
     @media (max-width: 767px) {
       width: 200px;
     }
@@ -107,6 +111,9 @@
   // .product-hero__read-more
 
   &__read-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: transparent;
     border: 1px solid #004165;
     color: #24505e;
@@ -116,6 +123,7 @@
     width: 346px;
     height: 100%;
     cursor: pointer;
+    text-decoration: none;
     @media (max-width: 767px) {
       width: 200px;
     }

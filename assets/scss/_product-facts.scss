@@ -135,6 +135,9 @@
   // .product-facts__button
 
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     background: linear-gradient(90deg, #004165, #006c98, #004165);
     width: 399px;
@@ -146,6 +149,7 @@
     backdrop-filter: blur(11px);
     margin-top: 24px;
     font-family: RF Dewi;
+    text-decoration: none;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     @media (max-width: 480px) {
       width: 245px;

@@ -72,6 +72,9 @@
   // .footer__button
 
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.86);
     width: 279px;
     height: 61px;
@@ -83,6 +86,7 @@
     border: none;
     margin-left: 38px;
     cursor: pointer;
+    text-decoration: none;
     @media (max-width: 480px) {
       margin: 0;
       font-size: 12px;
@@ -255,12 +259,18 @@
     list-style-type: none;
     padding: 0;
     gap: 44px;
-    font-family: Montserrat;
+
     font-weight: 600;
     font-size: 20px;
     line-height: 15px;
-    color: #efefef;
+
     margin: 0;
+
+    a {
+      text-decoration: none;
+      font-family: Montserrat;
+      color: #efefef;
+    }
     @media (max-width: 1200px) {
       font-size: 18px;
     }
