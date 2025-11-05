@@ -35,14 +35,17 @@
     padding: 0 15px;
   }
 }
+.header__logo {
+  width: 153px;
+}
 @media (max-width: 767px) {
-  .header__logo img {
+  .header__logo {
     width: 120px;
   }
 }
 @media (max-width: 480px) {
-  .header__logo img {
-    width: 70px;
+  .header__logo {
+    width: 90px;
   }
 }
 .header__menu {

@@ -26,18 +26,15 @@
   }
 
   &__logo {
+    width: 153px;
     @media (max-width: 992px) {
     }
     @media (max-width: 767px) {
-      img {
-        width: 120px;
-      }
+      width: 120px;
     }
 
     @media (max-width: 480px) {
-      img {
-        width: 70px;
-      }
+      width: 90px;
     }
   }
 
